@@ -1,0 +1,152 @@
+
+{ "san_pham": [
+        {"id": 1, "name": "Táo đỏ", "gia": "20000", "title": "Táo đỏ giòn ngọt, giàu vitamin C", "sold": 45, 
+        "img": "https://plus.unsplash.com/premium_photo-1724249989963-9286e126af81?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTE5fHx8ZW58MHx8fHx8"},
+        {"id": 2, "name": "Chuối", "gia": "15000", "title": "Chuối chín vàng, bổ sung năng lượng", "sold": 67, 
+        "img": "https://plus.unsplash.com/premium_photo-1724250081106-4bb1be9bf950?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fGJhbmFuYXxlbnwwfHwwfHx8MA%3D%3D"},
+        {"id": 3, "name": "Cam", "gia": "25000", "title": "Cam tươi mọng nước, giàu vitamin C", "sold": 82, 
+        "img": "https://plus.unsplash.com/premium_photo-1724255955809-0158a050911a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NjF8fHxlbnwwfHx8fHw%3D"},
+        {"id": 4, "name": "Xoài", "gia": "30000", "title": "Xoài chín thơm ngon, giàu chất xơ", "sold": 54, 
+        "img": "https://plus.unsplash.com/premium_photo-1724255862358-b58750ad31a8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTI3fHx8ZW58MHx8fHx8"},
+        {"id": 5, "name": "Nho", "gia": "35000", "title": "Nho giống xanh ngọt lịm, giàu chất chống oxy hóa", "sold": 76, 
+        "img": "https://plus.unsplash.com/premium_photo-1724250450261-80b25f8e3fab?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTQ5fHx8ZW58MHx8fHx8"},
+        {"id": 6, "name": "Dứa", "gia": "40000", "title": "Dứa tươi ngon, giàu vitamin C", "sold": 33, "img": 
+        "https://plus.unsplash.com/premium_photo-1724255995351-9aa5b0e7cdad?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTQyfHx8ZW58MHx8fHx8"},
+        {"id": 7, "name": "Dâu tây", "gia": "50000", "title": "Dâu tây đỏ mọng, giàu chất chống oxy hóa", "sold": 29, "img": 
+        "https://plus.unsplash.com/premium_photo-1724256148318-388029ff4dd4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8ODh8fHxlbnwwfHx8fHw%3D"},
+        {"id": 8, "name": "Dưa hấu", "gia": "20000", "title": "Dưa hấu ngọt mát, giải nhiệt mùa hè", "sold": 91, "img": 
+        "https://plus.unsplash.com/premium_photo-1724256227270-44572e77d129?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTcwfHx8ZW58MHx8fHx8"},
+        {"id": 9, "name": "Cherry", "gia": "70000", "title": "Cherry đỏ ngọt, giàu chất chống oxy hóa", "sold": 56, "img": 
+        "https://plus.unsplash.com/premium_photo-1724250230125-62b7cb5dceb6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NjZ8fHxlbnwwfHx8fHw%3D"},
+        {"id": 10, "name": "Bơ", "gia": "50000", "title": "Bơ tươi ngon, giàu chất béo tốt", "sold": 41, "img": 
+        "https://plus.unsplash.com/premium_photo-1724250044296-372268b98495?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Nzl8fHxlbnwwfHx8fHw%3D"},
+        {"id": 11, "name": "Chanh", "gia": "15000", "title": "Chanh tươi, giàu vitamin C", "sold": 64, "img": 
+        "https://plus.unsplash.com/premium_photo-1724252306440-c0f8b33afd53?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8ODN8fHxlbnwwfHx8fHw%3D"},
+        {"id": 12, "name": "Việt quất", "gia": "80000", "title": "Việt quất tươi, giàu chất chống oxy hóa", "sold": 19, "img": 
+        "https://plus.unsplash.com/premium_photo-1724250116365-cf1ff5d35c02?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTExfHx8ZW58MHx8fHx8"},
+        {"id": 20, "name": "Mâm xôi", "gia": "90000", "title": "Mâm xôi đỏ, giàu chất chống oxy hóa", "sold": 49, "img": 
+        "https://example.com/raspberry.jpg"}
+    
+],
+"binh_luan": [
+  {
+    "id": "1",
+    "noi_dung": "Trái cây này còn hàng không ạ?",
+    "an_hien": "1",
+    "ngay": "2023-11-07 09:54",
+    "id_sp": "001",
+    "ho_ten": "Tấn Duy",
+    "email": "ntanduy2612@gmail.com"
+  },
+  {
+    "id": "2",
+    "noi_dung": "Trái cây tươi ngon lắm mọi người ơi, mình rất bất ngờ với chất lượng của sản phẩm. Vừa ngon, ngọt, lại còn được giao hàng nhanh nữa. Đáng giá từng đồng!",
+    "an_hien": "1",
+    "ngay": "2023-11-07 09:54",
+    "id_sp": "002",
+    "id_user": null,
+    "ho_ten": "Văn Tuấn",
+    "email": "anhvanh71@gmail.com"
+  },
+  {
+    "id": "3",
+    "noi_dung": "Trái cây được đóng gói cẩn thận, tươi ngon và không bị dập nát khi vận chuyển. Hương vị rất tuyệt!",
+    "an_hien": "1",
+    "ngay": "2023-11-07 09:54",
+    "id_sp": "003",
+    "id_user": null,
+    "ho_ten": "Tâm",
+    "email": "tamttmps25065@fpt.edu.vn"
+  },
+  {
+    "id": "4",
+    "noi_dung": "Chanh hơi chua, còn lại ngon.",
+    "an_hien": "1",
+    "ngay": "2023-11-13 12:43",
+    "id_sp": "004",
+    "id_user": null,
+    "ho_ten": "Thuan",
+    "email": "hothuan@gmail.com"
+  },
+  {
+    "id": "5",
+    "noi_dung": "Mình đã mua và trải nghiệm dịch vụ của shop, trái cây rất tươi ngon. Đặc biệt là dịch vụ khách hàng rất chu đáo. Sẽ tiếp tục ủng hộ shop!",
+    "an_hien": "1",
+    "ngay": "2023-11-24 23:24",
+    "id_sp": "005",
+    "id_user": null,
+    "ho_ten": "Văn Tuấn",
+    "email": "anhvanh71@gmail.com"
+  },
+  {
+    "id": "6",
+    "noi_dung": "Shop bán trái cây tươi ngon, giá cả hợp lý, giao hàng nhanh.",
+    "an_hien": "1",
+    "ngay": "2023-11-30 13:38",
+    "id_sp": "006",
+    "id_user": null,
+    "ho_ten": "Yên My",
+    "email": "yenmydoan@gmail.com"
+  },
+  {
+    "id": "7",
+    "noi_dung": "Tôi đã mua trái cây tại đây và không thể tin được vào chất lượng! Trái cây tươi, ngọt, và cực kỳ đáng giá.",
+    "an_hien": "1",
+    "ngay": "2023-03-04 13:44",
+    "id_sp": "007",
+    "id_user": null,
+    "ho_ten": "Nguyễn Tuấn Kiệt",
+    "email": "kietntps24637@fpt.edu.vn"
+  },
+  {
+    "id": "8",
+    "noi_dung": "Nếu bạn đang tìm kiếm trái cây tươi ngon và chất lượng, hãy ghé thăm shop này. Trái cây của tôi vừa ngon vừa tươi, giúp tôi tự tin khi đãi khách.",
+    "an_hien": "1",
+    "ngay": "2023-11-14 13:47",
+    "id_sp": "008",
+    "id_user": null,
+    "ho_ten": "Hồng Tuyết",
+    "email": "namnpps24700@fpt.edu.vn"
+  },
+  {
+    "id": "9",
+    "noi_dung": "Shop có đa dạng các loại trái cây tươi ngon từ nhiều nguồn khác nhau. Tôi đã tìm thấy những loại trái cây hoàn hảo cho gia đình mình.",
+    "an_hien": "1",
+    "ngay": "2023-11-20 13:52",
+    "id_sp": "009",
+    "id_user": null,
+    "ho_ten": "Nam Phương",
+    "email": "phuongnamn@gmail.com"
+  },
+  {
+    "id": "10",
+    "noi_dung": "Trái cây này còn loại khác không ạ?",
+    "an_hien": "1",
+    "ngay": "2023-12-01 17:14",
+    "id_sp": "010",
+    "id_user": null,
+    "ho_ten": "Trần Thị Mỹ Tâm",
+    "email": "tranthimytam0721@gmail.com"
+  },
+  {
+    "id": "11",
+    "noi_dung": "Trái cây thực sự làm tôi hài lòng với chất lượng tươi ngon. Đóng gói cẩn thận, và dịch vụ rất tốt.",
+    "an_hien": "1",
+    "ngay": "2023-12-03 10:54",
+    "id_sp": "011",
+    "id_user": null,
+    "ho_ten": "Ngọc My",
+    "email": "ngocmynguyen@gmail.com"
+  },
+  {
+    "id": "12",
+    "noi_dung": "Đây là nơi bạn có thể tìm thấy những loại trái cây tươi ngon và chất lượng. Không ngạc nhiên khi shop trở thành điểm đến của nhiều người.",
+    "an_hien": "1",
+    "ngay": "2023-12-03 17:29",
+    "id_sp": "012",
+    "ho_ten": "Viết Thuận",
+    "email": "hothuan@gmail.com"
+  }
+]
+
+}

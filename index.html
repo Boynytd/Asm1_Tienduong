@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web bán trái cây</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+
+    <div id="wrapper">
+        <div id="header">
+            <a href="" class="logo">
+                <img src="img/ntd1.png" alt="Logo">
+            </a>
+            <div id="menu">
+                <div class="item">
+                    <a href="#trangchu">Trang chủ</a>
+                </div>
+                <div class="item">
+                    <a href="#sanpham">Sản phẩm</a>
+                </div>
+                <div class="item">
+                    <a href="#phanhoi">Phản hồi</a>
+                </div>
+                <div class="item">
+                    <a href="#lienhe">Liên hệ</a>
+                </div>
+            </div>
+            <div id="actions">
+                <div class="item">
+                    <img src="img/cart.png" alt="Giỏ hàng">
+                </div>
+                <div class="item">
+                    <img src="img/user.png" alt="Người dùng">
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide Show -->
+        <div class="slide-show">
+            <div class="list-images">
+                <img src="./img/fruit1.jpg" class="slide"  alt="Trái cây 1" style="display: block;">
+                <img src="./img/fruit2.jpg" class="slide"  alt="Trái cây 2" style="display: none;">
+                <img src="./img/fruit3.jpg" class="slide"  alt="Trái cây 3" style="display: none;">
+                <img src="./img/fruit4.jpg" class="slide"  alt="Trái cây 4" style="display: none;">
+            </div>
+            <div class="btns">
+                <button class="btn-left btn" id="btn-left"> ⇦ </button>
+                <button class="btn-right btn" id="btn-right"> ⇨ </button>
+            </div>
+            <div class="index-images">
+                <div class="index-item active" data-index="0"></div>
+                <div class="index-item" data-index="1"></div>
+                <div class="index-item" data-index="2"></div>
+                <div class="index-item" data-index="3"></div>
+            </div>
+        </div>
+        
+        <script type="module" src="./js/script.js"></script>
+        
+      
+       
+             <!-- List trang trí -->
+        <div class="list-container">
+            <ul class="styled-list">
+                <li>
+                    <div class="iconz">
+                        🛡️
+                    </div>
+                    <div class="text">
+                        <p>Sản phẩm</p>
+                        <strong>AN TOÀN</strong>
+                    </div>
+                </li>
+                <li>
+                    <div class="iconz">
+                        ♥️
+                    </div>
+                    <div class="text">
+                        <p>Chất lượng</p>
+                        <strong>TƯƠI NGON</strong>
+                    </div>
+                </li>
+                <li>
+                    <div class="iconz">
+                        💡
+                    </div>
+                    <div class="text">
+                        <p>Dịch vụ</p>
+                        <strong>TẬN TÂM</strong>
+                    </div>
+                </li>
+                <li>
+                    <div class="iconz">
+                        🛵
+                    </div>
+                    <div class="text">
+                        <p>Giao hàng</p>
+                        <strong>SIÊU TỐC</strong>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div>
+
+            <div class="bannerz">
+                <h1>Sự tươi mới - Cam kết an toàn - Giao nhanh tận nơi</h1>
+                <div class="images">
+                    <img src="https://images.pexels.com/photos/1105166/pexels-photo-1105166.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Grapes">
+                </div>
+                <h2 id = hihi2>Khám phá thế giới hương vị đa dạng với bộ sưu tập trái cây tươi độc quyền, chỉ có tại NTD SHOP</h2>
+                <button id = "hihi">Tìm hiểu thêm</button>
+            </div>
+                      
+        <div id="sanpham">
+            <h2>SẢN PHẨM</h2>
+            <div id="product-list"></div> 
+        </div>
+        
+        
+        <div id="phanhoi">
+            <h2>PHẢN HỒI</h2>
+            <div id="comment-list"></div> 
+        </div>
+
+        <div id="lienhe">
+            <h2>LIÊN HỆ</h2>
+            <div id="contact-wrapper">    
+          
+
+                <div class="left-section">
+                    <div class="image-container">
+                        <img src="https://t3.ftcdn.net/jpg/06/78/41/34/240_F_678413426_oCnJrnVuTASs5473WSZz80WWicaxHxJy.jpg" alt="Contact for me">
+                    </div>
+                </div>
+                <div class="right-section">
+                    <h2>Để lại góp ý</h2>
+                    <p>Chúng tôi trân trọng mọi đóng góp của quý khách để nâng cao chất lượng dịch vụ</p>
+                    <form>
+                        <label for="name">Họ tên <span>*</span></label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="phone">Số điện thoại <span>*</span></label>
+                        <input type="tel" id="phone" name="phone" required>
+                        <button type="submit">GÓP Ý</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+<div id = "dataFruit"> </div>
+<div id="popup-modal" class="modal hidden">
+    <div class="modal-content">
+      <p>Cảm ơn ý kiến đóng góp của bạn, chúc bạn một ngày mới tốt lành!</p>
+      <button id="close-btn">Đóng</button>
+    </div>
+  </div>
+
+ <div id="overlay" class="overlay hidden"></div> <!-- Lớp đen mờ -->
+  <div id="popup-modal" class="modal hidden">
+    <div class="modal-content">
+      <p>Cảm ơn ý kiến đóng góp của bạn, chúc bạn ngày mới tốt lành!</p>
+      <button id="close-btn">Đóng</button>
+    </div>
+  </div>
+
+  <div class="floating-icons">
+    <a href="https://www.google.co.vi/maps/place/C%C3%B4ng+Vi%C3%AAn+Ph%E1%BA%A7n+M%E1%BB%81m+Quang+Trung/@10.852994,106.624209,17z/data=!3m1!4b1!4m6!3m5!1s0x31752bee0b0ef9e5:0x5b4da59e47aa97a8!8m2!3d10.852994!4d106.6267839!16s%2Fm%2F02pw0_8?entry=ttu&g_ep=EgoyMDI0MTAyMS4xIKXMDSoASAFQAw%3D%3D" class="icon red" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/128/535/535239.png" alt="Location">
+    </a>
+    <a href="https://www.facebook.com" class="icon blue" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/128/160/160154.png" alt="Facebook">
+    </a>
+    </a>
+    <a href="https://www.tiktok.com" class="icon black" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/128/2582/2582617.png" alt="TikTok">
+    </a>
+</div>
+
+
+  <!-- Footer-->        
+        <footer>
+            
+                    <div class="footer-container">
+                        <div class="footer-column">
+                            <h3>LIÊN HỆ</h3>
+                            <p><strong>NTD SHOP</strong></p>
+                            <p>ĐC: Công viên phần mềm Quang Trung, Tân Chánh Hiệp, Quận 12, Hồ Chí Minh</p>
+                            <p><a href="duongntps30308@fpt.edu.vn">duongntps30308@fpt.edu.vn</a></p>
+                            <p><strong>Call: <span class="highlight">+123456789</span></strong></p>
+                            <p>Từ: 8h00-17h00 Từ Thứ 2 đến Chủ Nhật </p>
+                        </div>
+                        
+                        <div class="footer-column">
+                            <h3>DANH MỤC</h3>
+                            <ul>
+                                <li><a href="#sanpham">Sản phẩm</a></li>
+                                <li><a href="#phanhoi">Phản hồi</a></li>
+                                <li><a href="#lienhe">Liên hệ</a></li>
+                            </ul>
+                        </div>
+            
+                        <div class="footer-column">
+                            <h3>GIỚI THIỆU</h3>
+                            <p>Chào mừng đến với NTD shop bán trái cây, nơi bạn sẽ tìm thấy những trái cây tươi ngon và chất lượng nhất. Chúng tôi cam kết mang đến cho bạn những sản phẩm tốt nhất, với giá cả hợp lý và dịch vụ tận tâm.</p>
+                            <p>Hãy đến với NTD shop bán trái cây để trải nghiệm sự tươi ngon và chất lượng của các sản phẩm của chúng tôi. Chúng tôi đảm bảo bạn sẽ hài lòng với những gì bạn tìm thấy tại đây.</p>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="footer-contents">
+                            <h2>Product by NTD - PS30308</h2>
+                            <p id="footercp">
+                                2024 Copyright © NTD .All rights reserved.
+                            </p>
+            </div>
+        </footer>   
+
+</body>
+</html>
+
+<script type="module">
+    import { lay_san_pham, lay_binh_luan } from "./js/script.js";
+    
+    const loadSanPham = async () => {
+        document.querySelector("#product-list").innerHTML = await lay_san_pham(12);
+    };  
+
+    loadSanPham();
+    const loadBinhLuan = async () => {
+        document.querySelector("#comment-list").innerHTML = await lay_binh_luan(9);
+    };  
+
+    loadBinhLuan();
+</script>
