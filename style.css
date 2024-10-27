@@ -297,6 +297,54 @@ html {
     color: #2F4F4F;
 }
 
+
+#tintuc {
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#tintuc h2 {
+    color: #CD5C5C;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#tintuc #tintuc-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+#tintuc #tintuc-list .tt {
+    width: 100%;
+    height: auto;
+    text-align: left;
+    padding: 20px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    background-color: #ececec;
+}
+
+#tintuc #tintuc-list .tt p {
+    font-size: 0.5em; /* Điều chỉnh font tiêu đề */
+}
+#tintuc #tintuc-list .tt h5 {
+    color: #CDAF95;
+    margin-bottom: 10px;
+    font-size: 1em;
+    text-align: left;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
 /*Nút Mua Ngay*/
 .buy-now-btn {
     background-color:#2E8B57;
@@ -747,15 +795,15 @@ padding-top: 50px;
 }
 
 .icon.red {
-    background-color: #f44336;
+    background-color: #EE7C6B;
 }
 
 .icon.blue {
-    background-color: #2196f3;
+    background-color:#99D1D3;
 }
 
-.icon.black {
-    background-color: #FFFFFF;
+.icon.white {
+    background-color: #CAE5E8;
 }
 
 .icon:hover {

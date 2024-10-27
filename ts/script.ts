@@ -43,8 +43,8 @@ document.getElementById('btn-right')?.addEventListener('click', () => changeSlid
 // Xử lý sự kiện cho các chỉ số (dots)
 const dots = document.getElementsByClassName('index-item');
 for (let i = 0; i < dots.length; i++) {
-    dots[i].addEventListener('click', function() {
-        const index = Number((this as HTMLElement).getAttribute('data-index'));
+    dots[i].addEventListener('click', () => {
+        const index = Number((dots[i] as HTMLElement).getAttribute('data-index'));
         currentSlide(index);
     });
 }
@@ -64,8 +64,10 @@ interface IBinh_Luan{
     id_sp:number; 
     noi_dung:string;
     ngay:string; 
-    ho_ten:string;
+    ho_ten:string
 }
+
+
 
 
 const code_1_san_pham = (sp: TSanPham) => {
@@ -117,6 +119,37 @@ export const lay_binh_luan = async (so_bl=6) => {
         
     return str;
 }
+
+// API TIN TỨC
+interface ITin_Tuc {
+    id: number;
+    tieude: string;
+    noi_dung_tt: string;
+    ngay_dang: string;
+}
+
+
+
+const code_tin_tuc = (tt: ITin_Tuc) => {
+    return `<div class="tt">
+        <h5> ${tt.tieude}  
+            <br>
+            <p>Ngày đăng: <span>${new Date(tt.ngay_dang).toLocaleDateString("vi")}</span> </p> 
+        </h5>
+        <h6>Nội dung: ${tt.noi_dung_tt}</h6>
+    </div>`;
+};
+
+
+export const lay_tin_tuc = async (so_tt) => {
+    let url = URL_API + `/tin_tuc?_sort=-ngay_dang&_limit=${so_tt}`;
+    let tt_arr: ITin_Tuc[];
+    tt_arr = await fetch(url).then(res => res.json()).then(d => d);
+    let str = ``;
+    tt_arr.forEach(tt => str += code_tin_tuc(tt));
+        
+    return str;
+};
 
 
 // Lắng nghe sự kiện khi form được submit

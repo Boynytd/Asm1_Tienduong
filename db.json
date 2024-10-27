@@ -6,9 +6,9 @@
         "img": "https://plus.unsplash.com/premium_photo-1724250081106-4bb1be9bf950?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fGJhbmFuYXxlbnwwfHwwfHx8MA%3D%3D"},
         {"id": 3, "name": "Cam", "gia": "25000", "title": "Cam tươi mọng nước, giàu vitamin C", "sold": 82, 
         "img": "https://plus.unsplash.com/premium_photo-1724255955809-0158a050911a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NjF8fHxlbnwwfHx8fHw%3D"},
-        {"id": 4, "name": "Xoài", "gia": "30000", "title": "Xoài chín thơm ngon, giàu chất xơ", "sold": 54, 
+        {"id": 4, "name": "Xoài Cát", "gia": "30000", "title": "Xoài chín thơm ngon, giàu chất xơ", "sold": 54, 
         "img": "https://plus.unsplash.com/premium_photo-1724255862358-b58750ad31a8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTI3fHx8ZW58MHx8fHx8"},
-        {"id": 5, "name": "Nho", "gia": "35000", "title": "Nho giống xanh ngọt lịm, giàu chất chống oxy hóa", "sold": 76, 
+        {"id": 5, "name": "Nho", "gia": "85000", "title": "Nho giống xanh ngọt lịm, giàu chất chống oxy hóa", "sold": 76, 
         "img": "https://plus.unsplash.com/premium_photo-1724250450261-80b25f8e3fab?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTQ5fHx8ZW58MHx8fHx8"},
         {"id": 6, "name": "Dứa", "gia": "40000", "title": "Dứa tươi ngon, giàu vitamin C", "sold": 33, "img": 
         "https://plus.unsplash.com/premium_photo-1724255995351-9aa5b0e7cdad?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTQyfHx8ZW58MHx8fHx8"},
@@ -147,6 +147,61 @@
     "ho_ten": "Viết Thuận",
     "email": "hothuan@gmail.com"
   }
+],
+"tin_tuc": [ 
+  {
+    "id": 1,
+    "tieude": "Bí quyết chọn trái cây tươi ngon và an toàn",
+    "ngay_dang": "2023-11-01",
+    "noi_dung_tt": "Học cách chọn trái cây tươi ngon, đảm bảo an toàn và giàu dinh dưỡng. Đặc biệt chú ý đến màu sắc, mùi hương và độ chín của quả để chọn được trái cây tốt nhất cho gia đình bạn."
+  },
+  {
+    "id": "2",
+    "tieude": "Mẹo bảo quản trái cây lâu mà vẫn tươi ngon",
+    "ngay_dang": "2023-08-05",
+    "noi_dung_tt": "Để trái cây luôn tươi ngon, bạn có thể bảo quản trong tủ lạnh hoặc ở nhiệt độ phòng tuỳ loại. Hãy giữ trái cây trong hộp kín hoặc túi zip để tránh mất nước và giữ được độ tươi."
+  },
+  {
+    "id": "3",
+    "tieude": "Những lợi ích bất ngờ của việc ăn trái cây mỗi ngày",
+    "ngay_dang": "2023-03-10",
+    "noi_dung_tt": "Ăn trái cây hàng ngày cung cấp nhiều vitamin và khoáng chất, giúp tăng cường hệ miễn dịch và làm đẹp da. Đây là thói quen lành mạnh mà ai cũng nên duy trì."
+  },
+  {
+    "id": "4",
+    "tieude": "Công thức sinh tố trái cây cho làn da sáng khỏe",
+    "ngay_dang": "2023-05-15",
+    "noi_dung_tt": "Một ly sinh tố trái cây mỗi sáng không chỉ cung cấp năng lượng mà còn giúp bạn có làn da sáng mịn. Kết hợp các loại trái cây như cam, bơ và chuối để đạt hiệu quả tốt nhất."
+  },
+  {
+    "id": "5",
+    "tieude": "Mẹo tránh làm trái cây bị thâm sau khi gọt",
+    "ngay_dang": "2023-12-20",
+    "noi_dung_tt": "Sau khi gọt trái cây như táo hay chuối, bạn có thể vắt ít chanh hoặc cho vào nước muối loãng để giữ màu sắc tươi mới, tránh bị thâm."
+  },
+  {
+    "id": "6",
+    "tieude": "Những loại trái cây giúp giảm cân hiệu quả",
+    "ngay_dang": "2023-06-25",
+    "noi_dung_tt": "Trái cây như bưởi, dâu tây, và kiwi chứa ít calo và giàu chất xơ, giúp bạn no lâu và hỗ trợ quá trình giảm cân một cách tự nhiên."
+  },
+  {
+    "id": "7",
+    "tieude": "Cách chế biến trái cây thành món ăn hấp dẫn cho trẻ nhỏ",
+    "ngay_dang": "2023-09-30",
+    "noi_dung_tt": "Biến trái cây thành món ăn vui nhộn và hấp dẫn với các hình dáng ngộ nghĩnh. Đây là cách khuyến khích trẻ em ăn trái cây mà không cảm thấy nhàm chán."
+  },
+  {
+    "id": "8",
+    "tieude": "Tại sao nên uống nước ép trái cây tươi mỗi ngày",
+    "ngay_dang": "2023-04-05",
+    "noi_dung_tt": "Nước ép trái cây tươi là nguồn cung cấp vitamin và chất chống oxy hóa tuyệt vời. Uống một ly nước ép mỗi ngày giúp bổ sung năng lượng và hỗ trợ tiêu hóa."
+  },
+  {
+    "id": "9",
+    "tieude": "Cách làm mứt trái cây tại nhà đơn giản và tiết kiệm",
+    "ngay_dang": "2023-11-10",
+    "noi_dung_tt": "Hướng dẫn cách làm mứt trái cây tại nhà với các nguyên liệu tự nhiên, an toàn và tiết kiệm. Bạn có thể làm mứt từ dứa, táo, hoặc dâu để thưởng thức lâu dài."
+  }
 ]
-
 }

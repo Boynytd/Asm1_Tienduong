@@ -25,6 +25,9 @@
                     <a href="#sanpham">Sản phẩm</a>
                 </div>
                 <div class="item">
+                    <a href="#tintuc">Tin tức</a>
+                </div>
+                <div class="item">
                     <a href="#phanhoi">Phản hồi</a>
                 </div>
                 <div class="item">
@@ -121,14 +124,19 @@
             <h2>SẢN PHẨM</h2>
             <div id="product-list"></div> 
         </div>
-        
+
+        <div id="tintuc">
+            <h2>TIN TỨC </h2>
+            <div id="tintuc-list"></div> 
+        </div>
+
         
         <div id="phanhoi">
             <h2>PHẢN HỒI</h2>
             <div id="comment-list"></div> 
         </div>
 
-        <div id="lienhe">
+        <div id="lienhe" style=" padding-top: 20px;">
             <h2>LIÊN HỆ</h2>
             <div id="contact-wrapper">    
           
@@ -169,14 +177,14 @@
 
   <div class="floating-icons">
     <a href="https://www.google.co.vi/maps/place/C%C3%B4ng+Vi%C3%AAn+Ph%E1%BA%A7n+M%E1%BB%81m+Quang+Trung/@10.852994,106.624209,17z/data=!3m1!4b1!4m6!3m5!1s0x31752bee0b0ef9e5:0x5b4da59e47aa97a8!8m2!3d10.852994!4d106.6267839!16s%2Fm%2F02pw0_8?entry=ttu&g_ep=EgoyMDI0MTAyMS4xIKXMDSoASAFQAw%3D%3D" class="icon red" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/128/535/535239.png" alt="Location">
+        <img src="https://cdn-icons-png.flaticon.com/128/2335/2335353.png" alt="Location">
     </a>
     <a href="https://www.facebook.com" class="icon blue" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/128/160/160154.png" alt="Facebook">
+        <img src="https://cdn-icons-png.flaticon.com/128/733/733547.png" alt="Facebook">
     </a>
     </a>
-    <a href="https://www.tiktok.com" class="icon black" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/128/2582/2582617.png" alt="TikTok">
+    <a href="https://www.tiktok.com" class="icon white" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/128/889/889101.png" alt="TikTok">
     </a>
 </div>
 
@@ -198,8 +206,10 @@
                             <h3>DANH MỤC</h3>
                             <ul>
                                 <li><a href="#sanpham">Sản phẩm</a></li>
+                                <li><a href="#tintuc">Tin tức</a></li>
                                 <li><a href="#phanhoi">Phản hồi</a></li>
                                 <li><a href="#lienhe">Liên hệ</a></li>
+                                
                             </ul>
                         </div>
             
@@ -222,7 +232,7 @@
 </html>
 
 <script type="module">
-    import { lay_san_pham, lay_binh_luan } from "./js/script.js";
+    import { lay_san_pham, lay_binh_luan, lay_tin_tuc } from "./js/script.js";
     
     const loadSanPham = async () => {
         document.querySelector("#product-list").innerHTML = await lay_san_pham(12);
@@ -234,4 +244,10 @@
     };  
 
     loadBinhLuan();
+
+    const loadTinTuc = async () => {
+    document.querySelector("#tintuc-list").innerHTML = await lay_tin_tuc(9);
+    };
+
+    loadTinTuc();
 </script>

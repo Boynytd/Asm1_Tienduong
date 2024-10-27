@@ -28,8 +28,8 @@ document.getElementById('btn-left')?.addEventListener('click', () => changeSlide
 document.getElementById('btn-right')?.addEventListener('click', () => changeSlide(1));
 const dots = document.getElementsByClassName('index-item');
 for (let i = 0; i < dots.length; i++) {
-    dots[i].addEventListener('click', function () {
-        const index = Number(this.getAttribute('data-index'));
+    dots[i].addEventListener('click', () => {
+        const index = Number(dots[i].getAttribute('data-index'));
         currentSlide(index);
     });
 }
@@ -75,6 +75,23 @@ export const lay_binh_luan = async (so_bl = 6) => {
     bl_arr = await fetch(url).then(res => res.json()).then(d => d);
     let str = ``;
     bl_arr.forEach(bl => str += code_1_binh_luan(bl));
+    return str;
+};
+const code_tin_tuc = (tt) => {
+    return `<div class="tt">
+        <h5> ${tt.tieude}  
+            <br>
+            <p>Ngày đăng: <span>${new Date(tt.ngay_dang).toLocaleDateString("vi")}</span> </p> 
+        </h5>
+        <h6>Nội dung: ${tt.noi_dung_tt}</h6>
+    </div>`;
+};
+export const lay_tin_tuc = async (so_tt) => {
+    let url = URL_API + `/tin_tuc?_sort=-ngay_dang&_limit=${so_tt}`;
+    let tt_arr;
+    tt_arr = await fetch(url).then(res => res.json()).then(d => d);
+    let str = ``;
+    tt_arr.forEach(tt => str += code_tin_tuc(tt));
     return str;
 };
 document.addEventListener("DOMContentLoaded", () => {
