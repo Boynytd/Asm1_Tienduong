@@ -1,53 +1,29 @@
-//Khai báo biến slideIndex
-let slideIndex: number = 0;
-showSlide(slideIndex);
+let slideIndex = 0;
+let slideInterval: number | undefined;
 
-//Hiển thị slide tại chỉ số index đã cho.
+// Hàm hiển thị slide hiện tại dựa trên chỉ số
 function showSlide(index: number): void {
     const slides = document.getElementsByClassName('slide') as HTMLCollectionOf<HTMLElement>;
     const dots = document.getElementsByClassName('index-item') as HTMLCollectionOf<HTMLElement>;
 
-//Hiển thị slide tại chỉ số index đã cho.
-    if (index >= slides.length) {
-        slideIndex = 0;
-    }
-    if (index < 0) {
-        slideIndex = slides.length - 1;
-    }
+    // Kiểm tra chỉ số, nếu quá số slide thì quay lại từ đầu
+    slideIndex = index >= slides.length ? 0 : index;
 
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = 'none';
-    }
-    for (let i = 0; i < dots.length; i++) {
-        dots[i].classList.remove('active');
-    }
+// Ẩn tất cả slides
+    for (let i = 0; i < slides.length; i++) slides[i].style.display = 'none';
+    for (let i = 0; i < dots.length; i++) dots[i].classList.remove('active');
 
+// Hiển thị slide hiện tại 
     slides[slideIndex].style.display = 'block';
     dots[slideIndex].classList.add('active');
 }
 
-// Thay đổi slide sang slide tiếp theo hoặc trước đó.
-function changeSlide(n: number): void {
-    showSlide(slideIndex += n);
+// Chuyển slide mỗi 5 giây
+function autoSlide(): void {
+    showSlide(slideIndex + 1);
 }
+slideInterval = setInterval(autoSlide, 5000);
 
-//Hàm này được gọi để chuyển trực tiếp đến slide có chỉ số n.
-function currentSlide(n: number): void {
-    showSlide(slideIndex = n);
-}
-
-// Xử lý sự kiện cho các nút trái phải
-document.getElementById('btn-left')?.addEventListener('click', () => changeSlide(-1));
-document.getElementById('btn-right')?.addEventListener('click', () => changeSlide(1));
-
-// Xử lý sự kiện cho các chỉ số (dots)
-const dots = document.getElementsByClassName('index-item');
-for (let i = 0; i < dots.length; i++) {
-    dots[i].addEventListener('click', () => {
-        const index = Number((dots[i] as HTMLElement).getAttribute('data-index'));
-        currentSlide(index);
-    });
-}
 
 const URL_API = "http://localhost:3000";
 type TSanPham = {
@@ -152,45 +128,47 @@ export const lay_tin_tuc = async (so_tt) => {
 };
 
 
-// Lắng nghe sự kiện khi form được submit
+// Chờ đến khi trang tải xong
 document.addEventListener("DOMContentLoaded", () => {
-    const form = document.querySelector("form");
-    const popupModal = document.getElementById("popup-modal");
-    const closeBtn = document.getElementById("close-btn");
-    const overlay = document.getElementById("overlay");
+    const form = document.querySelector("form") as HTMLFormElement | null; // Tìm form
+    const popupModal = document.getElementById("popup-modal") as HTMLElement | null; // Tìm cửa sổ popup
+    const closeBtn = document.getElementById("close-btn") as HTMLElement | null; // Tìm nút đóng popup
+    const overlay = document.getElementById("overlay") as HTMLElement | null; // Tìm nền mờ bên ngoài popup
 
+    // Khi nhấn nút gửi form
     if (form) {
         form.addEventListener("submit", (event) => {
-            event.preventDefault(); 
+            event.preventDefault(); // Ngăn không cho trang tải lại
 
+            // Hiện popup và nền mờ
             if (popupModal && overlay) {
-                popupModal.classList.remove("hidden");
                 popupModal.classList.add("show");
-                overlay.classList.remove("hidden");
+                popupModal.classList.remove("hidden");
                 overlay.classList.add("show");
+                overlay.classList.remove("hidden");
             }
 
-            form.reset();
+            form.reset(); // Xóa dữ liệu form
         });
     }
 
-    // Đóng popup và overlay khi nhấn nút "Đóng"
+    // Khi nhấn nút "Đóng"
     if (closeBtn && popupModal && overlay) {
         closeBtn.addEventListener("click", () => {
-            popupModal.classList.remove("show");
             popupModal.classList.add("hidden");
-            overlay.classList.remove("show");
+            popupModal.classList.remove("show");
             overlay.classList.add("hidden");
+            overlay.classList.remove("show");
         });
     }
 
-    // Đóng popup và overlay khi nhấn vào overlay
+    // Khi nhấn vào nền mờ bên ngoài
     if (overlay) {
         overlay.addEventListener("click", () => {
-            popupModal?.classList.remove("show");
             popupModal?.classList.add("hidden");
-            overlay.classList.remove("show");
+            popupModal?.classList.remove("show");
             overlay.classList.add("hidden");
+            overlay.classList.remove("show");
         });
     }
 });

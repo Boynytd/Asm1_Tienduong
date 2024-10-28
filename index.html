@@ -45,25 +45,26 @@
         </div>
 
         <!-- Slide Show -->
-        <div class="slide-show">
-            <div class="list-images">
-                <img src="./img/fruit1.jpg" class="slide"  alt="Trái cây 1" style="display: block;">
-                <img src="./img/fruit2.jpg" class="slide"  alt="Trái cây 2" style="display: none;">
-                <img src="./img/fruit3.jpg" class="slide"  alt="Trái cây 3" style="display: none;">
-                <img src="./img/fruit4.jpg" class="slide"  alt="Trái cây 4" style="display: none;">
-            </div>
-            <div class="btns">
-                <button class="btn-left btn" id="btn-left"> ⇦ </button>
-                <button class="btn-right btn" id="btn-right"> ⇨ </button>
-            </div>
-            <div class="index-images">
-                <div class="index-item active" data-index="0"></div>
-                <div class="index-item" data-index="1"></div>
-                <div class="index-item" data-index="2"></div>
-                <div class="index-item" data-index="3"></div>
-            </div>
+ <div class="slide-show">
+    <!-- Phần container bao quanh để xử lý sự kiện di chuột -->
+    <div class="slides-container">
+        <div class="list-images">
+            <img src="./img/fruit1.jpg" class="slide" alt="Trái cây 1" style="display: block;">
+            <img src="./img/fruit2.jpg" class="slide" alt="Trái cây 2" style="display: none;">
+            <img src="./img/fruit3.jpg" class="slide" alt="Trái cây 3" style="display: none;">
+            <img src="./img/fruit4.jpg" class="slide" alt="Trái cây 4" style="display: none;">
         </div>
-        
+    </div>
+
+    <!-- Các chỉ số slide (dots) để chuyển slide thủ công -->
+    <div class="index-images">
+        <div class="index-item active" data-index="0" onclick="showSlide(0)"></div>
+        <div class="index-item" data-index="1" onclick="showSlide(1)"></div>
+        <div class="index-item" data-index="2" onclick="showSlide(2)"></div>
+        <div class="index-item" data-index="3" onclick="showSlide(3)"></div>
+    </div>
+</div>
+
         <script type="module" src="./js/script.js"></script>
         
       
@@ -197,7 +198,7 @@
                             <h3>LIÊN HỆ</h3>
                             <p><strong>NTD SHOP</strong></p>
                             <p>ĐC: Công viên phần mềm Quang Trung, Tân Chánh Hiệp, Quận 12, Hồ Chí Minh</p>
-                            <p><a href="duongntps30308@fpt.edu.vn">duongntps30308@fpt.edu.vn</a></p>
+                            <p><strong>Gmail: </strong><a href="https://mail.google.com/">duongntps30308@fpt.edu.vn</a> </p>
                             <p><strong>Call: <span class="highlight">+123456789</span></strong></p>
                             <p>Từ: 8h00-17h00 Từ Thứ 2 đến Chủ Nhật </p>
                         </div>

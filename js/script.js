@@ -1,38 +1,20 @@
 let slideIndex = 0;
-showSlide(slideIndex);
+let slideInterval;
 function showSlide(index) {
     const slides = document.getElementsByClassName('slide');
     const dots = document.getElementsByClassName('index-item');
-    if (index >= slides.length) {
-        slideIndex = 0;
-    }
-    if (index < 0) {
-        slideIndex = slides.length - 1;
-    }
-    for (let i = 0; i < slides.length; i++) {
+    slideIndex = index >= slides.length ? 0 : index;
+    for (let i = 0; i < slides.length; i++)
         slides[i].style.display = 'none';
-    }
-    for (let i = 0; i < dots.length; i++) {
+    for (let i = 0; i < dots.length; i++)
         dots[i].classList.remove('active');
-    }
     slides[slideIndex].style.display = 'block';
     dots[slideIndex].classList.add('active');
 }
-function changeSlide(n) {
-    showSlide(slideIndex += n);
+function autoSlide() {
+    showSlide(slideIndex + 1);
 }
-function currentSlide(n) {
-    showSlide(slideIndex = n);
-}
-document.getElementById('btn-left')?.addEventListener('click', () => changeSlide(-1));
-document.getElementById('btn-right')?.addEventListener('click', () => changeSlide(1));
-const dots = document.getElementsByClassName('index-item');
-for (let i = 0; i < dots.length; i++) {
-    dots[i].addEventListener('click', () => {
-        const index = Number(dots[i].getAttribute('data-index'));
-        currentSlide(index);
-    });
-}
+slideInterval = setInterval(autoSlide, 5000);
 const URL_API = "http://localhost:3000";
 const code_1_san_pham = (sp) => {
     return `
@@ -103,28 +85,28 @@ document.addEventListener("DOMContentLoaded", () => {
         form.addEventListener("submit", (event) => {
             event.preventDefault();
             if (popupModal && overlay) {
-                popupModal.classList.remove("hidden");
                 popupModal.classList.add("show");
-                overlay.classList.remove("hidden");
+                popupModal.classList.remove("hidden");
                 overlay.classList.add("show");
+                overlay.classList.remove("hidden");
             }
             form.reset();
         });
     }
     if (closeBtn && popupModal && overlay) {
         closeBtn.addEventListener("click", () => {
-            popupModal.classList.remove("show");
             popupModal.classList.add("hidden");
-            overlay.classList.remove("show");
+            popupModal.classList.remove("show");
             overlay.classList.add("hidden");
+            overlay.classList.remove("show");
         });
     }
     if (overlay) {
         overlay.addEventListener("click", () => {
-            popupModal?.classList.remove("show");
             popupModal?.classList.add("hidden");
-            overlay.classList.remove("show");
+            popupModal?.classList.remove("show");
             overlay.classList.add("hidden");
+            overlay.classList.remove("show");
         });
     }
 });
